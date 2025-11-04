@@ -1,4 +1,4 @@
-<p align="center"><a href="https://lunarphp.io/" target="_blank"><img src="https://raw.githubusercontent.com/lunarphp/art/main/lunar-logo.svg" width="200" alt="Lunar"></a></p>
+<p align="center"><a href="https://lunarphp.com/" target="_blank"><img src="https://raw.githubusercontent.com/lunarphp/art/main/lunar-logo.svg" width="200" alt="Lunar"></a></p>
 
 # Starter Kit
 
@@ -9,7 +9,7 @@ This repository is provided as a reference to learn how to use Lunar Laravel E-C
 
 # Installation
 
-For full installation instructions please visit https://docs.lunarphp.io/core/starter-kits.html
+For full installation instructions please visit [https://docs.lunarphp.com/](https://docs.lunarphp.com/)
 
 ## Installation with Docker
 
