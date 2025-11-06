@@ -23,7 +23,7 @@ class ProductPage extends Component
     {
         $this->url = $this->fetchUrl(
             $slug,
-            Product::class,
+            (new Product)->getMorphClass(),
             [
                 'element.media',
                 'element.variants.basePrices.currency',
@@ -32,13 +32,13 @@ class ProductPage extends Component
             ]
         );
 
+        if (! $this->url) {
+            abort(404);
+        }
+
         $this->selectedOptionValues = $this->productOptions->mapWithKeys(function ($data) {
             return [$data['option']->id => $data['values']->first()->id];
         })->toArray();
-
-        if (! $this->variant) {
-            abort(404);
-        }
     }
 
     /**
@@ -89,13 +89,13 @@ class ProductPage extends Component
      */
     public function getImagesProperty(): Collection
     {
-        return $this->product->media;
+        return $this->product->media->sortBy('order_column');
     }
 
     /**
      * Computed property to return current image.
      */
-    public function getImageProperty(): Media
+    public function getImageProperty(): ?Media
     {
         if (count($this->variant->images)) {
             return $this->variant->images->first();
