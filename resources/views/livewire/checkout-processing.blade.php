@@ -1,5 +1,5 @@
 <section class="bg-white">
-    <div class="max-w-screen-xl px-4 py-32 mx-auto sm:px-6 lg:px-8 lg:py-48" wire:poll>
+    <div class="max-w-screen-xl px-4 py-32 mx-auto sm:px-6 lg:px-8 lg:py-48" wire:poll.1s>
         <div class="max-w-xl mx-auto text-center">
             <h1 class="mt-8 text-3xl font-extrabold sm:text-5xl">
                 <span class="block"
