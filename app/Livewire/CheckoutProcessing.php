@@ -25,7 +25,7 @@ class CheckoutProcessing extends Component
 
     public function checkStatus(): void
     {
-        if (! $this->cart->completedOrder()->exists()) {
+        if (! $this->cart?->completedOrder()->exists()) {
             $this->tries++;
         }
 
@@ -33,7 +33,7 @@ class CheckoutProcessing extends Component
             $this->manuallyProcessOrder();
         }
 
-        if ($this->cart->completedOrder()->exists()) {
+        if ($this->cart?->completedOrder()->exists()) {
             to_route('checkout-success.view', [
                 'cartId' => $this->cart->id,
             ]);
@@ -59,7 +59,6 @@ class CheckoutProcessing extends Component
 
     public function getCartProperty()
     {
-
         return $this->paymentIntent->cart;
     }
 
