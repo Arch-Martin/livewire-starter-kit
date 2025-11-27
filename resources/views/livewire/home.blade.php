@@ -123,7 +123,7 @@
                             {!! $this->saleCollection->translateAttribute('description') !!}
                         </p>
                     </div>
-                    <a href="{{ route('collection.view', $this->saleCollection->defaultUrl->slug) }}" class="hidden md:block text-primary font-bold uppercase text-sm hover:text-secondary transition-colors">
+                    <a href="{{ $this->saleCollection->defaultUrl ? route('collection.view', $this->saleCollection->defaultUrl->slug) : '#' }}" class="hidden md:block text-primary font-bold uppercase text-sm hover:text-secondary transition-colors">
                         Ver todo &rarr;
                     </a>
                 </div>
@@ -135,7 +135,7 @@
                 </div>
                 
                 <div class="mt-8 text-center md:hidden">
-                    <a href="{{ route('collection.view', $this->saleCollection->defaultUrl->slug) }}" class="inline-block bg-secondary text-white font-bold py-3 px-8 rounded hover:bg-primary transition-colors uppercase text-sm">
+                    <a href="{{ $this->saleCollection->defaultUrl ? route('collection.view', $this->saleCollection->defaultUrl->slug) : '#' }}" class="inline-block bg-secondary text-white font-bold py-3 px-8 rounded hover:bg-primary transition-colors uppercase text-sm">
                         Ver todo
                     </a>
                 </div>

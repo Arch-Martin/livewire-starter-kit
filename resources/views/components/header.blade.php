@@ -16,9 +16,7 @@
         <!-- Logo -->
         <div class="flex-shrink-0">
             <a href="/" class="flex items-center gap-2">
-                <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-white font-display font-bold text-xl border-2 border-primary">
-                    OC
-                </div>
+                <img src="{{ asset('logo.png') }}" alt="Outlet del Café Logo" class="h-12 w-auto">
                 <span class="hidden sm:block font-display text-2xl font-bold text-secondary tracking-tighter uppercase">
                     Outlet del Café
                 </span>

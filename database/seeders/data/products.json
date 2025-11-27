@@ -2,7 +2,7 @@
     {
         "attributes": {
             "name": "Café Arábica Premium Colombia",
-            "description": "Café arábica 100% de la región de Huila, Colombia. Cultivado a 1800 metros sobre el nivel del mar, este café ofrece un sabor suave con notas dulces y un cuerpo medio. Tueste medio que resalta sus características naturales.",
+            "description": "Café arábica 100% de la región de Huila, Colombia. Tostado fresco en Puente Alto, Santiago. Cultivado a 1800 metros sobre el nivel del mar, este café ofrece un sabor suave con notas dulces y un cuerpo medio. Importado directamente de Colombia.",
             "origin": "Huila, Colombia",
             "intensity": "6/10",
             "notes": [
@@ -34,7 +34,7 @@
     {
         "attributes": {
             "name": "Café Etiopía Yirgacheffe",
-            "description": "Café de origen etíope, conocido mundialmente por su perfil floral y afrutado único. Proceso lavado que acentúa su acidez brillante y sus notas florales. Ideal para métodos de filtrado.",
+            "description": "Café de origen etíope, conocido mundialmente por su perfil floral y afrutado único. Tostado fresco en Puente Alto, Santiago. Proceso lavado que acentúa su acidez brillante. Importado directamente de Etiopía.",
             "origin": "Yirgacheffe, Etiopía",
             "intensity": "5/10",
             "notes": [
@@ -65,7 +65,7 @@
     {
         "attributes": {
             "name": "Café Brasil Santos",
-            "description": "Clásico café brasileño con cuerpo completo y baja acidez. Perfecto para espresso y blend. Notas a nuez y chocolate, con un final dulce y persistente.",
+            "description": "Clásico café brasileño con cuerpo completo y baja acidez. Tostado fresco en Puente Alto, Santiago. Perfecto para espresso y blend. Importado directamente de Brasil.",
             "origin": "Santos, Brasil",
             "intensity": "7/10",
             "notes": [
@@ -97,7 +97,7 @@
     {
         "attributes": {
             "name": "Café Costa Rica Tarrazú",
-            "description": "Café de altura de la región de Tarrazú, considerada una de las mejores zonas cafetaleras del mundo. Balance perfecto entre acidez, cuerpo y dulzura.",
+            "description": "Café de altura de la región de Tarrazú. Tostado fresco en Puente Alto, Santiago. Balance perfecto entre acidez, cuerpo y dulzura. Importado directamente de Costa Rica.",
             "origin": "Tarrazú, Costa Rica",
             "intensity": "6/10",
             "notes": [
@@ -128,7 +128,7 @@
     {
         "attributes": {
             "name": "Café Molido Espresso Italiano",
-            "description": "Mezcla italiana tradicional, molido especialmente para máquinas de espresso. Tueste oscuro que produce un espresso intenso con crema densa y persistente.",
+            "description": "Mezcla italiana tradicional, molido especialmente para máquinas de espresso. Tostado fresco en Puente Alto, Santiago. Tueste oscuro que produce un espresso intenso.",
             "intensity": "9/10",
             "notes": [
                 "Cacao intenso",
@@ -158,7 +158,7 @@
     {
         "attributes": {
             "name": "Café Molido Americano Suave",
-            "description": "Blend suave perfecto para cafetera de filtro o pour over. Tueste medio que preserva los sabores originales y ofrece una taza equilibrada y aromática.",
+            "description": "Blend suave perfecto para cafetera de filtro o pour over. Tostado fresco en Puente Alto, Santiago. Tueste medio que preserva los sabores originales.",
             "intensity": "5/10",
             "notes": [
                 "Frutas dulces",
@@ -187,7 +187,7 @@
     {
         "attributes": {
             "name": "Café Molido French Press",
-            "description": "Molido grueso especial para prensa francesa. Café de cuerpo completo que permite una extracción perfecta en este método de preparación.",
+            "description": "Molido grueso especial para prensa francesa. Tostado fresco en Puente Alto, Santiago. Café de cuerpo completo que permite una extracción perfecta.",
             "intensity": "7/10",
             "notes": [
                 "Chocolate negro",
@@ -216,7 +216,7 @@
     {
         "attributes": {
             "name": "Cápsulas Espresso Intenso",
-            "description": "Cápsulas de aluminio compatibles con máquinas Nespresso. Café de tueste oscuro con alta intensidad, ideal para espresso corto o ristretto. Caja con 10 cápsulas.",
+            "description": "Cápsulas de aluminio compatibles con máquinas Nespresso. Café de tueste oscuro con alta intensidad. Tostado y envasado en Puente Alto, Santiago.",
             "intensity": "10/10",
             "notes": [
                 "Cacao amargo",
@@ -231,12 +231,12 @@
         ],
         "sku": "CAPS-ESP-INT-001",
         "price": "4500",
-        "image": "tshirt.jpg"
+        "image": "cafe_molido_espresso_1764204841810.png"
     },
     {
         "attributes": {
             "name": "Cápsulas Lungo Suave",
-            "description": "Cápsulas para café lungo, taza más larga y suave. Compatible con máquinas Nespresso. Balance perfecto para quienes prefieren un café más ligero. Caja con 10 cápsulas.",
+            "description": "Cápsulas para café lungo, taza más larga y suave. Compatible con máquinas Nespresso. Tostado y envasado en Puente Alto, Santiago.",
             "intensity": "4/10",
             "notes": [
                 "Cereales tostados",
@@ -250,12 +250,12 @@
         ],
         "sku": "CAPS-LUN-SUA-001",
         "price": "4200",
-        "image": "tshirt.jpg"
+        "image": "cafe_arabica_colombia_1764204788279.png"
     },
     {
         "attributes": {
             "name": "Molinillo Manual Hario",
-            "description": "Molinillo manual de cerámica importado de Japón. Diseño elegante con cuerpo de vidrio y banda de madera. Permite ajustar el grosor del molido para diferentes métodos de preparación. Capacidad: 100g de café en grano.",
+            "description": "Molinillo manual de cerámica importado de Japón. Diseño elegante con cuerpo de vidrio y banda de madera. Ideal para moler tu café tostado en Puente Alto.",
             "details": [
                 "Muelas de cerámica de alta calidad",
                 "Ajuste de molienda continuo",
@@ -270,12 +270,12 @@
         ],
         "sku": "ACC-MOL-HAR-001",
         "price": "35000",
-        "image": "converse.jpg"
+        "image": "cafe_molido_french_1764204875872.png"
     },
     {
         "attributes": {
             "name": "Prensa Francesa Bodum 1L",
-            "description": "Prensa francesa de diseño clásico con capacidad de 1 litro (8 tazas). Estructura de acero inoxidable con mango ergonómico resistente al calor. Jarra de vidrio borosilicato de alta calidad.",
+            "description": "Prensa francesa de diseño clásico con capacidad de 1 litro. Perfecta para preparar nuestros cafés de origen.",
             "details": [
                 "Vidrio borosilicato resistente al calor",
                 "Filtro de acero inoxidable de malla fina",
@@ -291,12 +291,12 @@
         ],
         "sku": "ACC-PRE-BOD-001",
         "price": "28000",
-        "image": "nike_black.jpg"
+        "image": "cafe_molido_french_1764204875872.png"
     },
     {
         "attributes": {
             "name": "Taza Cerámica Artesanal",
-            "description": "Taza de cerámica hecha a mano por artesanos locales. Acabado rústico con esmalte mate en tonos tierra. Perfecta para disfrutar tu café favorito. Capacidad: 350ml.",
+            "description": "Taza de cerámica hecha a mano por artesanos locales de Puente Alto. Acabado rústico con esmalte mate.",
             "details": [
                 "Cerámica artesanal de alta calidad",
                 "Acabado mate único en cada pieza",
@@ -311,7 +311,7 @@
         ],
         "sku": "ACC-TAZ-CER-001",
         "price": "12000",
-        "image": "nicce_hoodie.jpg",
+        "image": "cafe_etiopia_1764204802493.png",
         "options": [
             {
                 "name": "Color",
@@ -327,7 +327,7 @@
     {
         "attributes": {
             "name": "Set Cucharas Medidoras Café",
-            "description": "Set de 4 cucharas medidoras de acero inoxidable con medidas específicas para café: 7g, 10g, 15g y 30g. Grabadas con láser para mayor durabilidad. Incluye anilla para mantenerlas juntas.",
+            "description": "Set de 4 cucharas medidoras de acero inoxidable. Esenciales para la dosis perfecta de tu café favorito.",
             "details": [
                 "Acero inoxidable de grado alimenticio",
                 "4 medidas: 7g, 10g, 15g, 30g",
@@ -342,6 +342,6 @@
         ],
         "sku": "ACC-CUC-MED-001",
         "price": "8500",
-        "image": "nike_hightop.jpg"
+        "image": "cafe_brasil_1764204816802.png"
     }
 ]

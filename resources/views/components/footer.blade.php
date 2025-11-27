@@ -11,15 +11,10 @@
             <!-- Column 1: Brand -->
             <div>
                 <div class="flex items-center gap-2 mb-6">
-                    <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-display font-bold text-lg">
-                        OC
-                    </div>
-                    <span class="font-display text-xl font-bold tracking-tighter uppercase">
-                        Outlet del Café
-                    </span>
+                    <img src="{{ asset('logo.png') }}" alt="Outlet del Café Logo" class="h-12 w-auto">
                 </div>
                 <p class="text-gray-400 text-sm leading-relaxed">
-                    Llevamos el mejor café del mundo directamente a tu taza. Calidad premium, precios justos y envíos a todo Chile.
+                    Llevamos el mejor café del mundo directamente a tu taza. Tostado fresco en Puente Alto. Calidad premium, precios justos y envíos a todo Chile.
                 </p>
                 <div class="mt-6 flex space-x-4">
                     <!-- Social Icons Placeholder -->
@@ -56,7 +51,7 @@
                 <ul class="space-y-3">
                     <li class="flex items-start gap-3">
                         <svg class="w-5 h-5 text-primary mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                        <span class="text-gray-400 text-sm">Av. Providencia 1234, Santiago, Chile</span>
+                        <span class="text-gray-400 text-sm">Cabo Vírgenes 2280, 8150215 Puente Alto, Región Metropolitana</span>
                     </li>
                     <li class="flex items-start gap-3">
                         <svg class="w-5 h-5 text-primary mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>

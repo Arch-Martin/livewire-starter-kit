@@ -9,7 +9,7 @@
     </div>
 
     <!-- Image -->
-    <a href="{{ route('product.view', $product->defaultUrl->slug) }}" wire:navigate class="block aspect-w-1 aspect-h-1 bg-gray-100 overflow-hidden">
+    <a href="{{ $product->defaultUrl ? route('product.view', $product->defaultUrl->slug) : '#' }}" wire:navigate class="block aspect-w-1 aspect-h-1 bg-gray-100 overflow-hidden">
         @if ($product->thumbnail)
             <img class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                  src="{{ $product->thumbnail->getUrl('medium') }}"
@@ -32,7 +32,7 @@
     <!-- Info -->
     <div class="p-4">
         <h3 class="text-sm font-bold text-gray-900 line-clamp-2 min-h-[40px] mb-2 font-display uppercase tracking-wide">
-            <a href="{{ route('product.view', $product->defaultUrl->slug) }}" wire:navigate>
+            <a href="{{ $product->defaultUrl ? route('product.view', $product->defaultUrl->slug) : '#' }}" wire:navigate>
                 {{ $product->translateAttribute('name') }}
             </a>
         </h3>
