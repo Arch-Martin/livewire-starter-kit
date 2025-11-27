@@ -5,5 +5,26 @@
         "type": "Lunar\\FieldTypes\\ListField",
         "attribute_type": "Lunar\\Models\\Product",
         "configuration": {}
+    },
+    {
+        "name": "Origin",
+        "handle": "origin",
+        "type": "Lunar\\FieldTypes\\Text",
+        "attribute_type": "Lunar\\Models\\Product",
+        "configuration": {}
+    },
+    {
+        "name": "Intensity",
+        "handle": "intensity",
+        "type": "Lunar\\FieldTypes\\Text",
+        "attribute_type": "Lunar\\Models\\Product",
+        "configuration": {}
+    },
+    {
+        "name": "Notes",
+        "handle": "notes",
+        "type": "Lunar\\FieldTypes\\ListField",
+        "attribute_type": "Lunar\\Models\\Product",
+        "configuration": {}
     }
 ]

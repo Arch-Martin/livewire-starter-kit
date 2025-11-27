@@ -37,24 +37,52 @@ class ProductSeeder extends AbstractSeeder
 
         $productType = ProductType::first();
 
+        if (!$productType) {
+            $productType = ProductType::create([
+                'name' => 'Stock',
+            ]);
+        }
+
         $taxClass = TaxClass::getDefault();
 
+        if (!$taxClass) {
+            $taxClass = TaxClass::create([
+                'name' => 'Default Tax Class',
+                'default' => true,
+            ]);
+        }
+
         $currency = Currency::getDefault();
+
+        if (!$currency) {
+            $currency = Currency::create([
+                'code' => 'GBP',
+                'name' => 'British Pound',
+                'exchange_rate' => 1,
+                'decimal_places' => 2,
+                'enabled' => true,
+                'default' => true,
+            ]);
+        }
 
         $collections = Collection::get();
 
         $language = Language::getDefault();
 
-        DB::transaction(function () use ($products, $attributes, $productType, $taxClass, $currency, $collections) {
-            $products->each(function ($product) use ($attributes, $productType, $taxClass, $currency, $collections) {
+        DB::transaction(function () use ($products, $attributes, $productType, $taxClass, $currency, $collections, $language) {
+            $products->each(function ($product) use ($attributes, $productType, $taxClass, $currency, $collections, $language) {
                 $attributeData = [];
 
                 foreach ($product->attributes as $attributeHandle => $value) {
                     $attribute = $attributes->first(fn ($att) => $att->handle == $attributeHandle);
 
+                    if (!$attribute) {
+                        continue;
+                    }
+
                     if ($attribute->type == TranslatedText::class) {
                         $attributeData[$attributeHandle] = new TranslatedText([
-                            'en' => new Text($value),
+                            $language->code => new Text($value),
                         ]);
 
                         continue;
@@ -74,6 +102,14 @@ class ProductSeeder extends AbstractSeeder
                     'product_type_id' => $productType->id,
                     'status' => 'published',
                     'brand_id' => $brand->id,
+                ]);
+
+                \Lunar\Models\Url::create([
+                    'slug' => Str::slug($product->attributes->name),
+                    'element_type' => $productModel->getMorphClass(),
+                    'element_id' => $productModel->id,
+                    'language_id' => $language->id,
+                    'default' => true,
                 ]);
 
                 $variant = ProductVariant::create([
@@ -135,10 +171,10 @@ class ProductSeeder extends AbstractSeeder
                     if (! $optionModel) {
                         $optionModel = ProductOption::create([
                             'name' => [
-                                'en' => $option->name,
+                                $language->code => $option->name,
                             ],
                             'label' => [
-                                'en' => $option->name,
+                                $language->code => $option->name,
                             ],
                             'shared' => $option->shared,
                             'handle' => Str::slug($option->name),
@@ -158,7 +194,7 @@ class ProductSeeder extends AbstractSeeder
                                 'position' => $optionIndex,
 
                                 'name' => [
-                                    'en' => $value,
+                                    $language->code => $value,
                                 ],
                             ]);
                         }

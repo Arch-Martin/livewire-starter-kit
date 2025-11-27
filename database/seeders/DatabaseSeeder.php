@@ -6,13 +6,16 @@ use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
-    /**
-     * Seed the application's database.
-     *
-     */
     public function run(): void
     {
+        // AHORA LLAMAMOS A TU ARCHIVO LOCAL (Sin la ruta larga de Lunar)
+        $this->call(LanguageSeeder::class);
+        $this->call(CurrencySeeder::class);
+        $this->call(ChannelSeeder::class);
+
+        // El resto sigue igual...
         $this->call(CollectionSeeder::class);
+        $this->call(CollectionUrlSeeder::class);
         $this->call(AttributeSeeder::class);
         $this->call(TaxSeeder::class);
         $this->call(ProductSeeder::class);

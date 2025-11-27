@@ -25,6 +25,9 @@ class OrderSeeder extends Seeder
      */
     public function run(): void
     {
+        $language = \Lunar\Models\Language::getDefault();
+        app()->setLocale($language->code);
+
         DB::transaction(function () {
             $variants = ProductVariant::get();
             $users = User::get();
@@ -55,7 +58,7 @@ class OrderSeeder extends Seeder
                         'purchasable_type' => (new ProductVariant)->getMorphClass(),
                         'purchasable_id' => $variant->id,
                         'type' => 'physical',
-                        'description' => $variant->product->translateAttribute('name'),
+                        'description' => $variant->product->translateAttribute('name') ?? 'Product ' . $variant->sku,
                         'option' => $options->join(', '),
                         'identifier' => $variant->sku,
                         'unit_price' => $price,
@@ -112,10 +115,12 @@ class OrderSeeder extends Seeder
                 $orderModel->save();
 
                 // Shipping / Billing address
+                // Shipping / Billing address
+                $countryId = \Lunar\Models\Country::first()->id;
                 $shipping = OrderAddress::factory()->create([
                     'order_id' => $orderModel->id,
                     'type' => 'shipping',
-                    'country_id' => 235, // UK
+                    'country_id' => $countryId,
                 ]);
 
                 if ($faker->boolean()) {
@@ -127,7 +132,7 @@ class OrderSeeder extends Seeder
                     OrderAddress::factory()->create([
                         'order_id' => $orderModel->id,
                         'type' => 'billing',
-                        'country_id' => 235, // UK
+                        'country_id' => $countryId,
                     ]);
                 }
 

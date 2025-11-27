@@ -1,18 +1,22 @@
 [
     {
-        "name": "Shoes",
-        "description": "Collection of Shoes"
+        "name": "Café en Grano",
+        "description": "Granos de café enteros de diferentes orígenes y tuestes"
     },
     {
-        "name": "Trousers",
-        "description": "Collection of Trousers"
+        "name": "Café Molido",
+        "description": "Café pre-molido para espresso, filtrado y prensa francesa"
     },
     {
-        "name": "Hoodies",
-        "description": "Collection of Hoodies"
+        "name": "Cápsulas",
+        "description": "Cápsulas de café compatibles con diferentes sistemas"
     },
     {
-        "name": "Sale",
-        "description": "50% OFF Selected Items"
+        "name": "Accesorios",
+        "description": "Molinillos, tazas, prensas y otros accesorios para café"
+    },
+    {
+        "name": "Ofertas",
+        "description": "Productos seleccionados con descuentos especiales"
     }
 ]

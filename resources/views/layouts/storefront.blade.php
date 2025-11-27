@@ -10,8 +10,11 @@
     <title>Demo Storefront</title>
     <meta
         name="description"
-        content="Example of an ecommerce storefront built with Lunar."
+        content="Outlet del Café - Tu tienda de café online."
     >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
     <link
         href="{{ asset('css/app.css') }}"
         rel="stylesheet"
@@ -25,10 +28,11 @@
 </head>
 
 <body class="antialiased text-gray-900">
-    @livewire('components.navigation')
+    <x-header />
 
     <main>
-        {{ $slot }}
+        {{ $slot ?? '' }}
+        @yield('content')
     </main>
 
     <x-footer />

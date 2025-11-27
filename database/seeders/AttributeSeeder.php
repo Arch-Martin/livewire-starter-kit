@@ -5,18 +5,26 @@ namespace Database\Seeders;
 use Illuminate\Support\Facades\DB;
 use Lunar\Models\Attribute;
 use Lunar\Models\AttributeGroup;
+use Lunar\Models\Product;
 
 class AttributeSeeder extends AbstractSeeder
 {
-    /**
-     * Run the database seeds.
-     *
-     */
     public function run(): void
     {
         $attributes = $this->getSeedData('attributes');
 
+        // --- CORRECCIÓN: Crear el grupo si no existe ---
         $attributeGroup = AttributeGroup::first();
+
+        if (!$attributeGroup) {
+            $attributeGroup = AttributeGroup::create([
+                'attributable_type' => Product::class,
+                'name' => 'Main',
+                'handle' => 'main',
+                'position' => 1,
+            ]);
+        }
+        // -----------------------------------------------
 
         DB::transaction(function () use ($attributes, $attributeGroup) {
             foreach ($attributes as $attribute) {

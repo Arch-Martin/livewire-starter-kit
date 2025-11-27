@@ -30,3 +30,8 @@ Route::get('search', SearchPage::class)->name('search.view');
 Route::get('checkout', CheckoutPage::class)->name('checkout.view');
 
 Route::get('checkout/success', CheckoutSuccessPage::class)->name('checkout-success.view');
+
+Route::view('terminos-y-condiciones', 'pages.terms')->name('terms');
+Route::view('politica-de-privacidad', 'pages.privacy')->name('privacy');
+Route::view('derecho-a-retracto', 'pages.refund')->name('refund');
+Route::view('despacho', 'pages.shipping')->name('shipping');

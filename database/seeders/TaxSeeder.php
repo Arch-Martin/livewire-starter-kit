@@ -2,48 +2,64 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Seeder;
 use Lunar\Models\Country;
 use Lunar\Models\TaxClass;
 use Lunar\Models\TaxRate;
 use Lunar\Models\TaxZone;
 use Lunar\Models\TaxZoneCountry;
 
-class TaxSeeder extends Seeder
+class TaxSeeder extends AbstractSeeder
 {
-    /**
-     * Run the database seeds.
-     *
-     */
     public function run(): void
     {
-        $taxClass = TaxClass::first();
+        // --- CORRECCIÓN: Crear el País si no existe ---
+        $chileCountry = Country::where('iso2', 'CL')->first();
 
-        $ukCountry = Country::firstWhere('iso3', 'GBR');
+        if (!$chileCountry) {
+            $chileCountry = Country::create([
+                'iso2' => 'CL',
+                'name' => 'Chile',
+                'phonecode' => '56',
+                'continent' => 'South America',
+                'currency' => 'CLP',
+            ]);
+        }
+        // ----------------------------------------------
 
-        $ukTaxZone = TaxZone::factory()->create([
-            'name' => 'UK',
-            'active' => true,
+        // --- CORRECCIÓN: Crear la Zona de Impuestos si no existe ---
+        $chileTaxZone = TaxZone::where('name', 'Chile')->first();
+
+        if (!$chileTaxZone) {
+            $chileTaxZone = TaxZone::create([
+                'name' => 'Chile',
+                'zone_type' => 'country',
+                'active' => true,
+                'default' => true,
+            ]);
+        }
+        // -----------------------------------------------------------
+
+        // Vincular el país a la zona (Evitando duplicados)
+        if (!TaxZoneCountry::where('tax_zone_id', $chileTaxZone->id)->where('country_id', $chileCountry->id)->exists()) {
+            TaxZoneCountry::create([
+                'country_id' => $chileCountry->id,
+                'tax_zone_id' => $chileTaxZone->id,
+            ]);
+        }
+
+        // Crear o buscar la clase de impuesto
+        $taxClass = TaxClass::firstOrCreate([
+            'name' => 'Default Tax Class',
+        ], [
             'default' => true,
-            'zone_type' => 'country',
         ]);
 
-        TaxZoneCountry::factory()->create([
-            'country_id' => $ukCountry->id,
-            'tax_zone_id' => $ukTaxZone->id,
-        ]);
-
-        $ukRate = TaxRate::factory()->create([
-            'name' => 'VAT',
-            'tax_zone_id' => $ukTaxZone->id,
+        // Crear la tasa de impuesto
+        TaxRate::factory()->create([
+            'tax_zone_id' => $chileTaxZone->id,
+            'name' => 'IVA',
             'priority' => 1,
-        ]);
-
-        $ukRate->taxRateAmounts()->createMany([
-            [
-                'percentage' => 20,
-                'tax_class_id' => $taxClass->id,
-            ],
+            'percentage' => 19,
         ]);
     }
 }

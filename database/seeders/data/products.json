@@ -1,211 +1,347 @@
 [
     {
         "attributes": {
-            "name": "Levi's® 501® Straight Fit Jeans",
-            "description": "A cultural icon worn by generations, defining style for decades. The iconic straight fit with the signature button fly. Since Levi's® invented it in 1873, people have made them their own by ripping, tearing, repairing, dying and marking them up for total "
+            "name": "Café Arábica Premium Colombia",
+            "description": "Café arábica 100% de la región de Huila, Colombia. Cultivado a 1800 metros sobre el nivel del mar, este café ofrece un sabor suave con notas dulces y un cuerpo medio. Tueste medio que resalta sus características naturales.",
+            "origin": "Huila, Colombia",
+            "intensity": "6/10",
+            "notes": [
+                "Caramelo",
+                "Chocolate",
+                "Cítricos suaves"
+            ]
         },
-        "collections": ["trousers", "sale"],
-        "sku": "LEV-856",
-        "price": "8599",
-        "image": "black_jeans.jpg",
-        "brand": "Levis",
+        "collections": [
+            "café en grano",
+            "ofertas"
+        ],
+        "sku": "CAFE-COL-001",
+        "price": "8500",
+        "image": "cafe_arabica_colombia_1764204788279.png",
+        "brand": "Origen Directo",
         "options": [
             {
-                "name": "Size",
-                "shared": false,
+                "name": "Peso",
+                "shared": true,
                 "values": [
-                    "30 S (L30)",
-                    "32 S (L30)",
-                    "34 S (L30)",
-                    "36 S (L30)"
+                    "250g",
+                    "500g",
+                    "1kg"
                 ]
             }
         ]
     },
     {
         "attributes": {
-            "name": "Chuck 70 Raw Edge",
-            "description": "The timeless style you know and love gets remixed with light padding and unexpected raw-edge details. An elevated style icon, it features more cushioning to keep you looking ”and feeling” good all day. The Chuck 70 holds its own on fashion week runways and city streets, making it the go-to sneaker for those looking to enhance and express their style.",
-            "details": [
-                "High-top sneaker, crafted with organic canvas for an elevated look and feel",
-                "OrthoLite cushioning for all-day comfort",
-                "Raw-cut textile inserts for added padding",
-                "Shiny rubber sidewall and winged tongue stitching",
-                "Heritage details like a 1970s heel logo nod to its legacy"
+            "name": "Café Etiopía Yirgacheffe",
+            "description": "Café de origen etíope, conocido mundialmente por su perfil floral y afrutado único. Proceso lavado que acentúa su acidez brillante y sus notas florales. Ideal para métodos de filtrado.",
+            "origin": "Yirgacheffe, Etiopía",
+            "intensity": "5/10",
+            "notes": [
+                "Jazmín",
+                "Bergamota",
+                "Frutas de hueso"
             ]
         },
-        "brand": "Converse",
-        "collections": ["shoes", "sale"],
-        "sku": "CONV-70",
-        "price": "15000",
-        "image": "converse.jpg",
+        "brand": "Etiopía Select",
+        "collections": [
+            "café en grano"
+        ],
+        "sku": "CAFE-ETI-001",
+        "price": "12500",
+        "image": "cafe_etiopia_1764204802493.png",
         "options": [
             {
-                "name": "Shoe Size",
+                "name": "Peso",
                 "shared": true,
-                "values": ["UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10"]
+                "values": [
+                    "250g",
+                    "500g",
+                    "1kg"
+                ]
             }
         ]
     },
     {
         "attributes": {
-            "name": "Air Jordan",
-            "description": "Cold, wet weather usually means it's time to put away your J's until the spring.With the Air Jordan 1 Acclimate, those days are over.Part boot, part sneaker, it uses winterized materials in a toe-to-heel overhaul that's designed to help you stay warm and dry without losing the iconic AJ1 appeal."
+            "name": "Café Brasil Santos",
+            "description": "Clásico café brasileño con cuerpo completo y baja acidez. Perfecto para espresso y blend. Notas a nuez y chocolate, con un final dulce y persistente.",
+            "origin": "Santos, Brasil",
+            "intensity": "7/10",
+            "notes": [
+                "Avellana",
+                "Cacao",
+                "Dulce de leche"
+            ]
         },
-        "brand": "Nike",
-        "collections": ["shoes"],
-        "sku": "AIRJ-70",
-        "price": "18599",
-        "image": "nike_hightop.jpg",
+        "brand": "Brasil Premium",
+        "collections": [
+            "café en grano",
+            "ofertas"
+        ],
+        "sku": "CAFE-BRA-001",
+        "price": "7500",
+        "image": "cafe_brasil_1764204816802.png",
         "options": [
             {
-                "name": "Shoe Size",
+                "name": "Peso",
                 "shared": true,
-                "values": ["UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10"]
+                "values": [
+                    "250g",
+                    "500g",
+                    "1kg"
+                ]
             }
         ]
     },
     {
         "attributes": {
-            "name": "WORKER 20.5\" - CHINO SHORTS FOR MEN",
-            "description": "Our mens Original 20 joggers are a basic staple. Featuring everything you need from the perfect pair of relaxed trousers; draw cord and elasticated waist, elasticated cuffs for comfort fit, side and back pockets with a popper fastening and Saltrock branding. With a super soft, peach fluff finished inside for warmth and comfort."
+            "name": "Café Costa Rica Tarrazú",
+            "description": "Café de altura de la región de Tarrazú, considerada una de las mejores zonas cafetaleras del mundo. Balance perfecto entre acidez, cuerpo y dulzura.",
+            "origin": "Tarrazú, Costa Rica",
+            "intensity": "6/10",
+            "notes": [
+                "Miel",
+                "Manzana roja",
+                "Almendras tostadas"
+            ]
         },
-        "brand": "Saltrock",
-        "collections": ["trousers"],
-        "sku": "SLTRCK-70",
-        "price": "2500",
-        "image": "beige_trousers.jpg"
-    },
-    {
-        "attributes": {
-            "name": "Nike Sportswear Tech Fleece",
-            "description": "Ready for cooler weather, the Nike Sportswear Tech Fleece Joggers feature an updated fit perfect for everyday wear. Roomy through the thigh, this tapered design narrows at the knee to give you a comfortable feel without losing the clean, tailored look you love. Tall ribbed cuffs complete the jogger look while a zipped pocket on the right leg provides secure small-item storage and elevates the look."
-        },
-        "brand": "Nike",
-        "collections": ["trousers", "sale"],
-        "sku": "CU4495-410",
-        "price": "7995",
-        "image": "green_trousers.jpg"
-    },
-    {
-        "attributes": {
-            "name": "NICCE Mens Original Hood",
-            "description": "Original overhead hood featuring a white chest logo, with a drawstring hood, pouch pocket and cuffed sleeves and hem. A simple and easy piece, great to layer and throw on with jeans or joggers."
-        },
-        "brand": "NICCE",
-        "collections": ["hoodies", "sale"],
-        "sku": "NICCE-50",
-        "price": "5000",
-        "image": "nicce_hoodie.jpg"
-    },
-    {
-        "attributes": {
-            "name": "Nike Pegasus Trail 3",
-            "description": "Find your wings with an off-road run. The Nike Pegasus Trail 3 has the same cushioned comfort you love, with a design that nods to the classic Pegasus look. It's got tough traction to help you stay moving through rocky terrain. More support around the midfoot helps you feel secure on your journey."
-        },
-        "brand": "Nike",
-        "collections": ["shoes"],
-        "sku": "DA8698-001",
-        "price": "11495",
-        "image": "nike_black.jpg",
+        "brand": "Tarrazú Origins",
+        "collections": [
+            "café en grano"
+        ],
+        "sku": "CAFE-CRC-001",
+        "price": "11000",
+        "image": "cafe_costarica_1764204830456.png",
         "options": [
             {
-                "name": "Shoe Size",
+                "name": "Peso",
                 "shared": true,
-                "values": ["UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10"]
+                "values": [
+                    "250g",
+                    "500g",
+                    "1kg"
+                ]
             }
         ]
     },
     {
         "attributes": {
-            "name": "Men's Full-Zip Fleece Hoodie",
-            "description": "Made in Milan, Italy with thoughtful consideration of every last detail, this full-zip hoodie is designed for lightweight warmth and 360 degrees of comfort. A buttery-soft blend of cotton, cashmere and elastane lies flat on your skin for a smooth feel."
+            "name": "Café Molido Espresso Italiano",
+            "description": "Mezcla italiana tradicional, molido especialmente para máquinas de espresso. Tueste oscuro que produce un espresso intenso con crema densa y persistente.",
+            "intensity": "9/10",
+            "notes": [
+                "Cacao intenso",
+                "Frutos secos tostados",
+                "Caramelo quemado"
+            ]
         },
-        "brand": "Nike",
-        "collections": ["hoodies"],
-        "sku": "NIKE-FOO-50",
-        "price": "8000",
-        "image": "nike_hoodie_blue.jpg"
-    },
-    {
-        "attributes": {
-            "name": "Nike Red Hoodie",
-            "description": "This Hoodie outfits you in cosy comfort that's easy to layer. It's made from soft, warm fleece with an oversized chest graphic to make it clear who you're repping."
-        },
-        "brand": "Nike",
-        "collections": ["hoodies"],
-        "sku": "DH9320-657",
-        "price": "5495",
-        "image": "nike_hoodie_red.jpg"
-    },
-    {
-        "attributes": {
-            "name": "Nike Metcon 7",
-            "description": "The Nike Metcon 7 is the gold standard for weight training—even tougher and more stable than previous versions.We've also added React foam that ups the comfort to keep you ready for high-intensity cardio.Plus, a tab locks down your laces so you can forget about them coming untied when you're focused on your next PR."
-        },
-        "brand": "Nike",
-        "collections": ["shoes", "sale"],
-        "sku": "CZ8281-234",
-        "price": "11495",
-        "image": "nike_orange_white.jpg",
+        "brand": "Caffè Italiano",
+        "collections": [
+            "café molido",
+            "ofertas"
+        ],
+        "sku": "CAFE-MOL-ESP-001",
+        "price": "6500",
+        "image": "cafe_molido_espresso_1764204841810.png",
         "options": [
             {
-                "name": "Shoe Size",
+                "name": "Peso",
                 "shared": true,
-                "values": ["UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10"]
+                "values": [
+                    "250g",
+                    "500g"
+                ]
             }
         ]
     },
     {
         "attributes": {
-            "name": "Nike Air Huarache",
-            "description": "Built to fit your foot and designed for comfort, the Nike Air Huarache brings back a street-level favourite. Updated with sleek colours, this version has soft, synthetic leather accents on the upper that mix with super-breathable, perfectly shined neoprene-like fabric for easy styling."
+            "name": "Café Molido Americano Suave",
+            "description": "Blend suave perfecto para cafetera de filtro o pour over. Tueste medio que preserva los sabores originales y ofrece una taza equilibrada y aromática.",
+            "intensity": "5/10",
+            "notes": [
+                "Frutas dulces",
+                "Caramelo",
+                "Nueces"
+            ]
         },
-        "brand": "Nike",
-        "collections": ["shoes"],
-        "sku": "DR0141-001",
-        "price": "11495",
-        "image": "nike_shoe_1.jpg",
+        "brand": "American Classic",
+        "collections": [
+            "café molido"
+        ],
+        "sku": "CAFE-MOL-AME-001",
+        "price": "5500",
+        "image": "cafe_molido_americano_1764204855082.png",
         "options": [
             {
-                "name": "Shoe Size",
+                "name": "Peso",
                 "shared": true,
-                "values": ["UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10"]
+                "values": [
+                    "250g",
+                    "500g"
+                ]
             }
         ]
     },
     {
         "attributes": {
-            "name": "Women's Woven Tennis Trousers",
-            "description": "Made with multiple oversized pockets, the Naomi Osaka Trousers are a wardrobe staple with plenty of storage.Signature Naomi Osaka details, like her logo on the left pocket, put a premium spin on any outfit."
+            "name": "Café Molido French Press",
+            "description": "Molido grueso especial para prensa francesa. Café de cuerpo completo que permite una extracción perfecta en este método de preparación.",
+            "intensity": "7/10",
+            "notes": [
+                "Chocolate negro",
+                "Vainilla",
+                "Especias dulces"
+            ]
         },
-        "brand": "Nike",
-        "collections": ["sale"],
-        "sku": "DJ4661-010",
-        "price": "9995",
-        "image": "nike_trousers.jpg"
+        "brand": "French Origin",
+        "collections": [
+            "café molido"
+        ],
+        "sku": "CAFE-MOL-FRE-001",
+        "price": "6000",
+        "image": "cafe_molido_french_1764204875872.png",
+        "options": [
+            {
+                "name": "Peso",
+                "shared": true,
+                "values": [
+                    "250g",
+                    "500g"
+                ]
+            }
+        ]
     },
     {
         "attributes": {
-            "name": "Classic Hooded Sweat",
-            "description": "Double fabric hood"
+            "name": "Cápsulas Espresso Intenso",
+            "description": "Cápsulas de aluminio compatibles con máquinas Nespresso. Café de tueste oscuro con alta intensidad, ideal para espresso corto o ristretto. Caja con 10 cápsulas.",
+            "intensity": "10/10",
+            "notes": [
+                "Cacao amargo",
+                "Madera tostada",
+                "Robusto intenso"
+            ]
         },
-        "collections": ["hoodies"],
-        "sku": "HOOD-123",
-        "price": "1099",
-        "image": "tshirt.jpg",
-        "brand": "Fruit of the loom",
+        "brand": "Cápsula Premium",
+        "collections": [
+            "cápsulas",
+            "ofertas"
+        ],
+        "sku": "CAPS-ESP-INT-001",
+        "price": "4500",
+        "image": "tshirt.jpg"
+    },
+    {
+        "attributes": {
+            "name": "Cápsulas Lungo Suave",
+            "description": "Cápsulas para café lungo, taza más larga y suave. Compatible con máquinas Nespresso. Balance perfecto para quienes prefieren un café más ligero. Caja con 10 cápsulas.",
+            "intensity": "4/10",
+            "notes": [
+                "Cereales tostados",
+                "Miel",
+                "Flores blancas"
+            ]
+        },
+        "brand": "Cápsula Premium",
+        "collections": [
+            "cápsulas"
+        ],
+        "sku": "CAPS-LUN-SUA-001",
+        "price": "4200",
+        "image": "tshirt.jpg"
+    },
+    {
+        "attributes": {
+            "name": "Molinillo Manual Hario",
+            "description": "Molinillo manual de cerámica importado de Japón. Diseño elegante con cuerpo de vidrio y banda de madera. Permite ajustar el grosor del molido para diferentes métodos de preparación. Capacidad: 100g de café en grano.",
+            "details": [
+                "Muelas de cerámica de alta calidad",
+                "Ajuste de molienda continuo",
+                "Fácil de limpiar y mantener",
+                "Diseño compacto y portátil",
+                "No requiere electricidad"
+            ]
+        },
+        "brand": "Hario",
+        "collections": [
+            "accesorios"
+        ],
+        "sku": "ACC-MOL-HAR-001",
+        "price": "35000",
+        "image": "converse.jpg"
+    },
+    {
+        "attributes": {
+            "name": "Prensa Francesa Bodum 1L",
+            "description": "Prensa francesa de diseño clásico con capacidad de 1 litro (8 tazas). Estructura de acero inoxidable con mango ergonómico resistente al calor. Jarra de vidrio borosilicato de alta calidad.",
+            "details": [
+                "Vidrio borosilicato resistente al calor",
+                "Filtro de acero inoxidable de malla fina",
+                "Marco cromado resistente",
+                "Capacidad: 1000ml / 8 tazas",
+                "Apto para lavavajillas"
+            ]
+        },
+        "brand": "Bodum",
+        "collections": [
+            "accesorios",
+            "ofertas"
+        ],
+        "sku": "ACC-PRE-BOD-001",
+        "price": "28000",
+        "image": "nike_black.jpg"
+    },
+    {
+        "attributes": {
+            "name": "Taza Cerámica Artesanal",
+            "description": "Taza de cerámica hecha a mano por artesanos locales. Acabado rústico con esmalte mate en tonos tierra. Perfecta para disfrutar tu café favorito. Capacidad: 350ml.",
+            "details": [
+                "Cerámica artesanal de alta calidad",
+                "Acabado mate único en cada pieza",
+                "Apta para microondas y lavavajillas",
+                "Capacidad: 350ml",
+                "Fabricada por artesanos chilenos"
+            ]
+        },
+        "brand": "Cerámica Local",
+        "collections": [
+            "accesorios"
+        ],
+        "sku": "ACC-TAZ-CER-001",
+        "price": "12000",
+        "image": "nicce_hoodie.jpg",
         "options": [
             {
-                "name": "Colour",
-                "shared": true,
-                "values": ["Black", "Blue", "Red", "Green"]
-            },
-            {
-                "name": "Size",
-                "shared": true,
-                "values": ["Small", "Medium", "Large", "X-Large"]
+                "name": "Color",
+                "shared": false,
+                "values": [
+                    "Terracota",
+                    "Gris Carbón",
+                    "Beige Arena"
+                ]
             }
         ]
+    },
+    {
+        "attributes": {
+            "name": "Set Cucharas Medidoras Café",
+            "description": "Set de 4 cucharas medidoras de acero inoxidable con medidas específicas para café: 7g, 10g, 15g y 30g. Grabadas con láser para mayor durabilidad. Incluye anilla para mantenerlas juntas.",
+            "details": [
+                "Acero inoxidable de grado alimenticio",
+                "4 medidas: 7g, 10g, 15g, 30g",
+                "Medidas grabadas con láser",
+                "Incluye anilla organizadora",
+                "Aptas para lavavajillas"
+            ]
+        },
+        "brand": "Barista Tools",
+        "collections": [
+            "accesorios"
+        ],
+        "sku": "ACC-CUC-MED-001",
+        "price": "8500",
+        "image": "nike_hightop.jpg"
     }
 ]
