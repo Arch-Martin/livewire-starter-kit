@@ -3,8 +3,8 @@
         <div class="grid items-start grid-cols-1 gap-8 md:grid-cols-2">
             <div class="grid grid-cols-2 gap-4 md:grid-cols-1">
                 @if ($this->image)
-                    <div class="aspect-w-1 aspect-h-1">
-                        <img class="object-cover rounded-xl"
+                    <div class="relative h-96 overflow-hidden rounded-xl bg-gray-100">
+                        <img class="object-cover w-full h-full"
                              src="{{ $this->image->getUrl('large') }}"
                              alt="{{ $this->product->translateAttribute('name') }}" />
                     </div>
@@ -12,10 +12,10 @@
 
                 <div class="grid grid-cols-2 gap-4 sm:grid-cols-4">
                     @foreach ($this->images as $image)
-                        <div class="aspect-w-1 aspect-h-1"
+                        <div class="relative h-24 overflow-hidden rounded-xl bg-gray-100"
                              wire:key="image_{{ $image->id }}">
                             <img loading="lazy"
-                                 class="object-cover rounded-xl"
+                                 class="object-cover w-full h-full"
                                  src="{{ $image->getUrl('small') }}"
                                  alt="{{ $this->product->translateAttribute('name') }}" />
                         </div>

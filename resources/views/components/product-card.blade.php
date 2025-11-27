@@ -3,13 +3,13 @@
 <div class="group relative bg-white border border-gray-100 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300">
     <!-- Badge -->
     <div class="absolute top-0 left-0 z-10">
-        <span class="bg-primary text-white text-xs font-bold px-3 py-1 rounded-br-lg uppercase tracking-wider">
+        <span class="bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-br-lg uppercase tracking-wider shadow-sm">
             Oferta
         </span>
     </div>
 
     <!-- Image -->
-    <a href="{{ $product->defaultUrl ? route('product.view', $product->defaultUrl->slug) : '#' }}" wire:navigate class="block aspect-w-1 aspect-h-1 bg-gray-100 overflow-hidden">
+    <a href="{{ $product->defaultUrl ? route('product.view', $product->defaultUrl->slug) : '#' }}" wire:navigate class="block bg-gray-100 overflow-hidden relative aspect-square">
         @if ($product->thumbnail)
             <img class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                  src="{{ $product->thumbnail->getUrl('medium') }}"
@@ -40,15 +40,15 @@
         <div class="flex items-end gap-2 mb-1">
             <x-product-price :product="$product" class="text-lg font-black text-secondary font-mono" />
             <!-- Placeholder for old price -->
-             <span class="text-sm text-gray-400 line-through font-mono hidden">$12.990</span>
+             <span class="text-sm text-gray-400 line-through font-mono">$12.990</span>
         </div>
         
         <div class="flex justify-between items-center mt-2">
              <span class="text-xs text-gray-500">
                 SKU: {{ $product->variants->first()?->sku }}
              </span>
-             <!-- Savings Badge Placeholder -->
-             <span class="text-xs font-bold text-green-600 hidden">Ahorra 20%</span>
+             <!-- Savings Badge -->
+             <span class="text-xs font-bold text-red-600 bg-red-50 px-2 py-0.5 rounded">-20%</span>
         </div>
     </div>
 </div>
