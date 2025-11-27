@@ -10,8 +10,7 @@
     <a href="{{ $product->defaultUrl ? route('product.view', $product->defaultUrl->slug) : '#' }}" wire:navigate class="block overflow-hidden relative aspect-square">
         @if ($product->thumbnail)
             <img class="object-cover w-full h-full transition-transform duration-500 ease-out group-hover:scale-105"
-                 src="{{ $product->thumbnail->getUrl('medium') }}"
-                 loading="lazy"
+                 src="{{ $product->getFirstMediaUrl('images', 'medium') ?: $product->getFirstMediaUrl('images') }}"
                  alt="{{ $product->translateAttribute('name') }}" />
         @else
             <div class="flex items-center justify-center w-full h-full bg-gray-100 text-gray-400">

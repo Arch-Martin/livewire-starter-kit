@@ -2,20 +2,6 @@
     <!-- Hero Section (Black Friday) -->
     <x-welcome-banner />
 
-    <!-- Order Tracking Module -->
-    <section class="bg-white py-12 border-b border-gray-200">
-        <div class="max-w-4xl mx-auto text-center px-4">
-            <h2 class="font-heading text-3xl text-brand-dark mb-6">RASTREA TU PEDIDO</h2>
-            <form class="flex flex-col md:flex-row gap-4">
-                <input type="text" placeholder="Número de Orden" class="border-2 border-gray-300 focus:border-brand-dark p-4 w-full font-body rounded-none">
-                <input type="email" placeholder="Email" class="border-2 border-gray-300 focus:border-brand-dark p-4 w-full font-body rounded-none">
-                <button type="submit" class="bg-brand-dark text-white font-bold px-8 py-4 uppercase hover:bg-brand-orange transition-colors duration-300 whitespace-nowrap">
-                    Rastrear
-                </button>
-            </form>
-        </div>
-    </section>
-
     <!-- Visual Navigation (Categories) -->
     <section class="py-16 bg-light">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

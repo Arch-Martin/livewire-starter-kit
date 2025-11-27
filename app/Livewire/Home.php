@@ -14,7 +14,13 @@ class Home extends Component
      */
     public function getSaleCollectionProperty(): Collection | null
     {
-        return Url::whereElementType((new Collection)->getMorphClass())->whereSlug('ofertas')->first()?->element ?? null;
+        $collection = Url::whereElementType((new Collection)->getMorphClass())->whereSlug('ofertas')->first()?->element ?? null;
+        
+        if ($collection) {
+            $collection->load(['products.images']);
+        }
+        
+        return $collection;
     }
 
     /**

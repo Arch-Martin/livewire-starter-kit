@@ -26,7 +26,7 @@
         <div class="flex items-center space-x-6">
              <a href="#" class="text-brand-dark hover:text-brand-orange transition-colors">
                 <span class="sr-only">Cuenta</span>
-                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
             </a>
             @livewire('components.cart')
         </div>
@@ -41,8 +41,6 @@
                  <a href="/collections/cafe-molido" class="font-heading uppercase tracking-wider text-sm hover:border-b-2 hover:border-brand-orange transition-all pb-1">Café Molido</a>
                  <a href="/collections/capsulas" class="font-heading uppercase tracking-wider text-sm hover:border-b-2 hover:border-brand-orange transition-all pb-1">Cápsulas</a>
                  <a href="/collections/accesorios" class="font-heading uppercase tracking-wider text-sm hover:border-b-2 hover:border-brand-orange transition-all pb-1">Accesorios</a>
-                 <a href="#" class="font-heading uppercase tracking-wider text-sm hover:border-b-2 hover:border-brand-orange transition-all pb-1">Packs</a>
-                 <a href="#" class="font-heading uppercase tracking-wider text-sm hover:border-b-2 hover:border-brand-orange transition-all pb-1">Suscripciones</a>
             </nav>
         </div>
     </div>
