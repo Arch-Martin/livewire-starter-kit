@@ -1,49 +1,37 @@
 <div>
-    <!-- Hero Section -->
-    <section class="relative bg-secondary overflow-hidden">
-        <div class="absolute inset-0 opacity-20">
-            <!-- Texture overlay or background image -->
-            <img src="/images/hero.png" class="w-full h-full object-cover animate-fade-in" alt="Coffee Texture">
-        </div>
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32 flex flex-col items-center text-center">
-            <span class="inline-block py-1 px-3 rounded bg-primary/20 text-primary border border-primary/30 text-xs font-bold uppercase tracking-widest mb-4 backdrop-blur-sm">
-                Mercado Global
+    <!-- Hero Section (Black Friday) -->
+    <section class="relative bg-dark overflow-hidden min-h-[600px] flex items-center">
+        <!-- Background Texture/Gradient -->
+        <div class="absolute inset-0 bg-gradient-to-br from-accent to-black opacity-90"></div>
+        <div class="absolute inset-0 opacity-10" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+        
+        <!-- Hero Content -->
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center z-10">
+            <span class="inline-block py-1 px-3 rounded bg-primary/20 text-primary border border-primary/30 text-xs font-bold uppercase tracking-widest mb-6 backdrop-blur-sm animate-fade-in">
+                Ofertas por tiempo limitado
             </span>
-            <h1 class="text-5xl md:text-7xl font-display font-bold text-white mb-6 uppercase tracking-tighter leading-none animate-slide-up">
-                ¡Alerta en <br/><span class="text-primary">Mercado Global!</span>
+            
+            <h1 class="text-6xl md:text-8xl font-display font-bold text-white mb-6 uppercase tracking-tighter leading-none animate-slide-up" style="text-shadow: 4px 4px 0px #4A0E76;">
+                Black <span class="text-primary">Friday</span>
             </h1>
-            <p class="text-xl text-gray-300 max-w-2xl mb-8 font-light animate-slide-up animation-delay-300">
-                Descubre nuestra selección exclusiva de cafés de origen único. Sabores intensos, aromas inolvidables y la mejor calidad directo a tu hogar.
+            
+            <p class="text-xl md:text-2xl text-gray-300 max-w-2xl mb-10 font-sans font-light animate-slide-up animation-delay-300">
+                Precios explosivos en café de especialidad. <br>
+                <span class="text-white font-bold">¡No te quedes sin el tuyo!</span>
             </p>
-            <div class="flex gap-4">
-                <a href="/collections/ofertas" class="inline-block bg-primary text-white font-bold py-4 px-8 rounded hover:bg-white hover:text-primary transition-all duration-300 uppercase tracking-wide shadow-lg shadow-primary/30">
+            
+            <div class="mb-12 animate-slide-up animation-delay-500">
+                <x-countdown />
+            </div>
+            
+            <div class="flex flex-col sm:flex-row gap-4 animate-slide-up animation-delay-700">
+                <a href="/collections/ofertas" class="inline-block bg-primary text-white font-bold py-4 px-10 rounded hover:bg-white hover:text-primary transition-all duration-300 uppercase tracking-wide shadow-lg shadow-primary/30 transform hover:scale-105">
                     Ver Ofertas
                 </a>
-                <a href="/collections/cafe-en-grano" class="inline-block bg-transparent border-2 border-white text-white font-bold py-4 px-8 rounded hover:bg-white hover:text-secondary transition-all duration-300 uppercase tracking-wide">
+                <a href="/collections/cafe-en-grano" class="inline-block bg-transparent border-2 border-white text-white font-bold py-4 px-10 rounded hover:bg-white hover:text-secondary transition-all duration-300 uppercase tracking-wide transform hover:scale-105">
                     Explorar Café
                 </a>
             </div>
-        </div>
-    </section>
-
-    <!-- Countdown Section (Black Friday Style) -->
-    <section class="bg-dark py-12 border-y border-gray-800 relative overflow-hidden">
-        <div class="absolute inset-0 opacity-20">
-            <img src="/images/promo.png" class="w-full h-full object-cover" alt="Promo Background">
-        </div>
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-8">
-            <div class="text-center md:text-left">
-                <h2 class="text-4xl md:text-6xl font-display font-bold text-white italic tracking-tighter" style="text-shadow: 3px 3px 0px #4A0E76;">
-                    BLACK FRIDAY
-                </h2>
-                <p class="text-accent font-bold uppercase tracking-widest mt-2">Ofertas por tiempo limitado</p>
-            </div>
-            
-            <x-countdown />
-            
-            <a href="/collections/ofertas" class="inline-block bg-gradient-to-r from-accent to-purple-600 text-white font-bold py-3 px-8 rounded-full hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300 uppercase text-sm tracking-wider">
-                Más Información
-            </a>
         </div>
     </section>
 
@@ -56,7 +44,7 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                 <!-- Large Card 1 -->
-                <a href="/collections/cafe-en-grano" class="relative h-64 rounded-lg overflow-hidden group animate-slide-up">
+                <a href="/collections/cafe-en-grano" class="relative h-64 rounded-lg overflow-hidden group">
                     <img src="/images/bag.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Café en Grano">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
                         <div>
@@ -66,7 +54,7 @@
                     </div>
                 </a>
                 <!-- Large Card 2 -->
-                <a href="/collections/cafe-molido" class="relative h-64 rounded-lg overflow-hidden group animate-slide-up animation-delay-300">
+                <a href="/collections/cafe-molido" class="relative h-64 rounded-lg overflow-hidden group">
                     <img src="/images/ground.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Café Molido">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
                         <div>
@@ -79,21 +67,21 @@
             
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <!-- Small Card 1 -->
-                <a href="/collections/capsulas" class="relative h-48 rounded-lg overflow-hidden group animate-slide-up">
+                <a href="/collections/capsulas" class="relative h-48 rounded-lg overflow-hidden group">
                     <img src="/images/capsules.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Cápsulas">
                     <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-center justify-center">
                         <h3 class="text-xl font-display font-bold text-white uppercase drop-shadow-md">Cápsulas</h3>
                     </div>
                 </a>
                 <!-- Small Card 2 -->
-                <a href="/collections/accesorios" class="relative h-48 rounded-lg overflow-hidden group animate-slide-up animation-delay-300">
+                <a href="/collections/accesorios" class="relative h-48 rounded-lg overflow-hidden group">
                     <img src="/images/accessories.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Accesorios">
                     <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-center justify-center">
                         <h3 class="text-xl font-display font-bold text-white uppercase drop-shadow-md">Accesorios</h3>
                     </div>
                 </a>
                 <!-- Small Card 3 -->
-                <a href="/collections/ofertas" class="relative h-48 rounded-lg overflow-hidden group animate-slide-up animation-delay-500">
+                <a href="/collections/ofertas" class="relative h-48 rounded-lg overflow-hidden group">
                     <img src="/images/promo.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Ofertas">
                     <div class="absolute inset-0 bg-primary/60 group-hover:bg-primary/40 transition-colors flex items-center justify-center">
                         <h3 class="text-xl font-display font-bold text-white uppercase drop-shadow-md">Ofertas</h3>
@@ -129,7 +117,7 @@
                 </div>
 
                 <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
-                    @foreach ($this->saleCollection->products->take(4) as $product)
+                    @foreach ($this->saleCollection->products->take(8) as $product)
                         <x-product-card :product="$product" />
                     @endforeach
                 </div>
@@ -144,38 +132,5 @@
     @endif
 
     <!-- Trust Badges -->
-    <section class="py-12 bg-light border-t border-gray-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                <div class="flex flex-col items-center">
-                    <div class="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center mb-4 text-primary">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                    </div>
-                    <h3 class="font-display font-bold text-secondary uppercase mb-1">Calidad Garantizada</h3>
-                    <p class="text-xs text-gray-500">Selección premium</p>
-                </div>
-                <div class="flex flex-col items-center">
-                    <div class="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center mb-4 text-primary">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    </div>
-                    <h3 class="font-display font-bold text-secondary uppercase mb-1">Envíos Rápidos</h3>
-                    <p class="text-xs text-gray-500">A todo Chile</p>
-                </div>
-                <div class="flex flex-col items-center">
-                    <div class="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center mb-4 text-primary">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
-                    </div>
-                    <h3 class="font-display font-bold text-secondary uppercase mb-1">Pago Seguro</h3>
-                    <p class="text-xs text-gray-500">Transbank y más</p>
-                </div>
-                <div class="flex flex-col items-center">
-                    <div class="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center mb-4 text-primary">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
-                    </div>
-                    <h3 class="font-display font-bold text-secondary uppercase mb-1">Soporte 24/7</h3>
-                    <p class="text-xs text-gray-500">Estamos para ayudarte</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <x-trust-badges />
 </div>
