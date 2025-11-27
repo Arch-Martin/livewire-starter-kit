@@ -3,16 +3,16 @@
     <section class="relative bg-secondary overflow-hidden">
         <div class="absolute inset-0 opacity-20">
             <!-- Texture overlay or background image -->
-            <img src="https://images.unsplash.com/photo-1447933601403-0c60ef7db969?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" class="w-full h-full object-cover" alt="Coffee Texture">
+            <img src="/images/hero.png" class="w-full h-full object-cover animate-fade-in" alt="Coffee Texture">
         </div>
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32 flex flex-col items-center text-center">
             <span class="inline-block py-1 px-3 rounded bg-primary/20 text-primary border border-primary/30 text-xs font-bold uppercase tracking-widest mb-4 backdrop-blur-sm">
                 Mercado Global
             </span>
-            <h1 class="text-5xl md:text-7xl font-display font-bold text-white mb-6 uppercase tracking-tighter leading-none">
+            <h1 class="text-5xl md:text-7xl font-display font-bold text-white mb-6 uppercase tracking-tighter leading-none animate-slide-up">
                 ¡Alerta en <br/><span class="text-primary">Mercado Global!</span>
             </h1>
-            <p class="text-xl text-gray-300 max-w-2xl mb-8 font-light">
+            <p class="text-xl text-gray-300 max-w-2xl mb-8 font-light animate-slide-up animation-delay-300">
                 Descubre nuestra selección exclusiva de cafés de origen único. Sabores intensos, aromas inolvidables y la mejor calidad directo a tu hogar.
             </p>
             <div class="flex gap-4">
@@ -28,7 +28,9 @@
 
     <!-- Countdown Section (Black Friday Style) -->
     <section class="bg-dark py-12 border-y border-gray-800 relative overflow-hidden">
-        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+        <div class="absolute inset-0 opacity-20">
+            <img src="/images/promo.png" class="w-full h-full object-cover" alt="Promo Background">
+        </div>
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-8">
             <div class="text-center md:text-left">
                 <h2 class="text-4xl md:text-6xl font-display font-bold text-white italic tracking-tighter" style="text-shadow: 3px 3px 0px #4A0E76;">
@@ -54,8 +56,8 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                 <!-- Large Card 1 -->
-                <a href="/collections/cafe-en-grano" class="relative h-64 rounded-lg overflow-hidden group">
-                    <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Café en Grano">
+                <a href="/collections/cafe-en-grano" class="relative h-64 rounded-lg overflow-hidden group animate-slide-up">
+                    <img src="/images/bag.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Café en Grano">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
                         <div>
                             <h3 class="text-2xl font-display font-bold text-white uppercase">Café en Grano</h3>
@@ -64,8 +66,8 @@
                     </div>
                 </a>
                 <!-- Large Card 2 -->
-                <a href="/collections/cafe-molido" class="relative h-64 rounded-lg overflow-hidden group">
-                    <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Café Molido">
+                <a href="/collections/cafe-molido" class="relative h-64 rounded-lg overflow-hidden group animate-slide-up animation-delay-300">
+                    <img src="/images/ground.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Café Molido">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
                         <div>
                             <h3 class="text-2xl font-display font-bold text-white uppercase">Café Molido</h3>
@@ -77,22 +79,22 @@
             
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <!-- Small Card 1 -->
-                <a href="/collections/capsulas" class="relative h-48 rounded-lg overflow-hidden group">
-                    <img src="https://images.unsplash.com/photo-1621960166946-b677a2a02d41?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Cápsulas">
+                <a href="/collections/capsulas" class="relative h-48 rounded-lg overflow-hidden group animate-slide-up">
+                    <img src="/images/capsules.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Cápsulas">
                     <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-center justify-center">
                         <h3 class="text-xl font-display font-bold text-white uppercase drop-shadow-md">Cápsulas</h3>
                     </div>
                 </a>
                 <!-- Small Card 2 -->
-                <a href="/collections/accesorios" class="relative h-48 rounded-lg overflow-hidden group">
-                    <img src="https://images.unsplash.com/photo-1517080319559-22442aa29a56?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Accesorios">
+                <a href="/collections/accesorios" class="relative h-48 rounded-lg overflow-hidden group animate-slide-up animation-delay-300">
+                    <img src="/images/accessories.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Accesorios">
                     <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-center justify-center">
                         <h3 class="text-xl font-display font-bold text-white uppercase drop-shadow-md">Accesorios</h3>
                     </div>
                 </a>
                 <!-- Small Card 3 -->
-                <a href="/collections/ofertas" class="relative h-48 rounded-lg overflow-hidden group">
-                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Ofertas">
+                <a href="/collections/ofertas" class="relative h-48 rounded-lg overflow-hidden group animate-slide-up animation-delay-500">
+                    <img src="/images/promo.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Ofertas">
                     <div class="absolute inset-0 bg-primary/60 group-hover:bg-primary/40 transition-colors flex items-center justify-center">
                         <h3 class="text-xl font-display font-bold text-white uppercase drop-shadow-md">Ofertas</h3>
                     </div>

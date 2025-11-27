@@ -39,8 +39,8 @@
 
         <div class="flex items-end gap-2 mb-1">
             <x-product-price :product="$product" class="text-lg font-black text-secondary font-mono" />
-            <!-- Placeholder for old price if available in future -->
-            <!-- <span class="text-sm text-gray-400 line-through font-mono">$12.990</span> -->
+            <!-- Placeholder for old price -->
+             <span class="text-sm text-gray-400 line-through font-mono hidden">$12.990</span>
         </div>
         
         <div class="flex justify-between items-center mt-2">
@@ -48,7 +48,7 @@
                 SKU: {{ $product->variants->first()?->sku }}
              </span>
              <!-- Savings Badge Placeholder -->
-             <!-- <span class="text-xs font-bold text-green-600">Ahorra 20%</span> -->
+             <span class="text-xs font-bold text-green-600 hidden">Ahorra 20%</span>
         </div>
     </div>
 </div>

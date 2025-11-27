@@ -19,6 +19,6 @@ class HomeTest extends TestCase
         $this->get('/')
             ->assertStatus(200)
             ->assertSeeLivewire('home')
-            ->assertSeeLivewire('components.navigation');
+            ->assertSeeLivewire('components.cart');
     }
 }

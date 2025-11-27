@@ -110,6 +110,6 @@ class ProductPage extends Component
 
     public function render(): View
     {
-        return view('livewire.product-page');
+        return view('livewire.product-page')->layout('layouts.storefront');
     }
 }

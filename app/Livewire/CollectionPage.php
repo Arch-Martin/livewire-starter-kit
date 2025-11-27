@@ -39,6 +39,6 @@ class CollectionPage extends Component
 
     public function render(): View
     {
-        return view('livewire.collection-page');
+        return view('livewire.collection-page')->layout('layouts.storefront');
     }
 }

@@ -17,6 +17,6 @@
       Psy\Exception\ParseErrorException::fromParseError(Object(PhpParser\Error))
 
   2   vendor\psy\psysh\src\CodeCleaner.php:283
-      Psy\CodeCleaner::parse("<?php dump(\Lunar\Models\Url::whereElementType(\Lunar\Models\Product::class)-;
+      Psy\CodeCleaner::parse("<?php print_r(\Lunar\Models\Product::first()-;
 ")
 
