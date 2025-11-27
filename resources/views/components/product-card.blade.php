@@ -1,18 +1,17 @@
 @props(['product'])
 
-<div class="group relative bg-white border border-gray-100 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300">
+<div class="group relative bg-white border border-gray-100 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
     <!-- Badge -->
-    <div class="absolute top-0 left-0 z-10">
-        <span class="bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-br-lg uppercase tracking-wider shadow-sm">
-            Oferta
-        </span>
+    <div class="absolute top-0 left-0 bg-brand-orange text-white font-heading text-sm px-3 py-1 z-10">
+        OFERTA
     </div>
 
     <!-- Image -->
-    <a href="{{ $product->defaultUrl ? route('product.view', $product->defaultUrl->slug) : '#' }}" wire:navigate class="block bg-gray-100 overflow-hidden relative aspect-square">
+    <a href="{{ $product->defaultUrl ? route('product.view', $product->defaultUrl->slug) : '#' }}" wire:navigate class="block overflow-hidden relative aspect-square">
         @if ($product->thumbnail)
-            <img class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
+            <img class="object-cover w-full h-full transition-transform duration-500 ease-out group-hover:scale-105"
                  src="{{ $product->thumbnail->getUrl('medium') }}"
+                 loading="lazy"
                  alt="{{ $product->translateAttribute('name') }}" />
         @else
             <div class="flex items-center justify-center w-full h-full bg-gray-100 text-gray-400">
@@ -20,35 +19,23 @@
             </div>
         @endif
         
-        <!-- Quick Add Button (Visible on Hover) -->
-        <div class="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-            <button class="w-full bg-secondary text-white font-bold py-2 rounded shadow-lg hover:bg-primary transition-colors flex items-center justify-center gap-2">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
-                Ver Detalles
-            </button>
+        <!-- Quick Action Button -->
+        <div class="opacity-0 group-hover:opacity-100 transition-opacity absolute bottom-20 left-0 right-0 mx-auto w-10/12 bg-white/90 backdrop-blur text-black font-bold py-2 shadow-lg text-center cursor-pointer">
+            VISTA RÁPIDA
         </div>
     </a>
 
     <!-- Info -->
     <div class="p-4">
-        <h3 class="text-sm font-bold text-gray-900 line-clamp-2 min-h-[40px] mb-2 font-display uppercase tracking-wide">
+        <h3 class="font-heading text-lg text-brand-dark truncate mt-4">
             <a href="{{ $product->defaultUrl ? route('product.view', $product->defaultUrl->slug) : '#' }}" wire:navigate>
                 {{ $product->translateAttribute('name') }}
             </a>
         </h3>
 
-        <div class="flex items-end gap-2 mb-1">
-            <x-product-price :product="$product" class="text-lg font-black text-secondary font-mono" />
-            <!-- Placeholder for old price -->
-             <span class="text-sm text-gray-400 line-through font-mono">$12.990</span>
-        </div>
-        
-        <div class="flex justify-between items-center mt-2">
-             <span class="text-xs text-gray-500">
-                SKU: {{ $product->variants->first()?->sku }}
-             </span>
-             <!-- Savings Badge -->
-             <span class="text-xs font-bold text-red-600 bg-red-50 px-2 py-0.5 rounded">-20%</span>
+        <div class="flex items-baseline mt-2">
+            <x-product-price :product="$product" class="text-2xl font-bold text-brand-dark" />
+            <span class="text-sm text-gray-400 line-through ml-2">$12.990</span>
         </div>
     </div>
 </div>
