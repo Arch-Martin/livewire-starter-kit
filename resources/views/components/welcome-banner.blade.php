@@ -8,7 +8,11 @@
     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/30"></div>
 
     <!-- Content (Centered) -->
-    <div class="relative z-10 h-full flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8">
+    <div class="relative z-10 h-full flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8"
+         x-data="{ show: false }" 
+         x-init="setTimeout(() => show = true, 200)" 
+         x-show="show" 
+         x-transition.opacity.duration.1000ms>
         <h1 class="text-6xl md:text-8xl font-heading font-bold text-white uppercase drop-shadow-lg leading-none animate-slide-up-fade">
             ESPECIALISTAS EN ALTURA
         </h1>

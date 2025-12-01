@@ -23,10 +23,10 @@
         </div>
 
         <!-- Icons -->
-        <div class="flex items-center space-x-6">
+        <div class="flex items-center gap-6 h-full">
              <a href="#" class="text-brand-dark hover:text-brand-orange transition-colors">
                 <span class="sr-only">Cuenta</span>
-                <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
             </a>
             @livewire('components.cart')
         </div>

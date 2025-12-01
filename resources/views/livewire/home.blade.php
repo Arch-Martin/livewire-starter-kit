@@ -83,14 +83,14 @@
                     </a>
                 </div>
 
-                <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 px-4 md:px-8 max-w-7xl mx-auto">
                     @foreach ($this->saleCollection->products->take(8) as $product)
                         <x-product-card :product="$product" />
                     @endforeach
                 </div>
                 
                 <div class="mt-8 text-center md:hidden">
-                    <a href="{{ $this->saleCollection->defaultUrl ? route('collection.view', $this->saleCollection->defaultUrl->slug) : '#' }}" class="inline-block bg-secondary text-white font-bold py-3 px-8 rounded hover:bg-primary transition-colors uppercase text-sm">
+                    <a href="{{ $this->saleCollection->defaultUrl ? route('collection.view', $this->saleCollection->defaultUrl->slug) : '#' }}" class="inline-block bg-transparent border-2 border-brand-dark text-brand-dark uppercase font-heading font-bold px-6 py-2 text-sm hover:bg-brand-dark hover:text-white transition-colors duration-300">
                         Ver todo
                     </a>
                 </div>

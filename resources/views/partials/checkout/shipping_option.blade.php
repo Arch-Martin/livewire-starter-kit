@@ -27,7 +27,7 @@
                                    value="{{ $option->getIdentifier() }}"
                                    id="{{ $option->getIdentifier() }}" />
 
-                            <label class="flex items-center justify-between p-4 text-sm font-medium border border-gray-100 rounded-lg shadow-sm cursor-pointer peer-checked:border-blue-500 hover:bg-gray-50 peer-checked:ring-1 peer-checked:ring-blue-500"
+                            <label class="flex items-center justify-between p-4 text-sm font-medium border border-gray-100 rounded-lg shadow-sm cursor-pointer peer-checked:border-brand-orange hover:bg-gray-50 peer-checked:ring-1 peer-checked:ring-brand-orange"
                                    for="{{ $option->getIdentifier() }}">
                                 <p>
                                     {{ $option->getName() }}
@@ -60,7 +60,7 @@
 
             @if ($step == $currentStep)
                 <div class="mt-6 text-right">
-                    <button class="px-5 py-3 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-500"
+                    <button class="bg-brand-orange text-white uppercase font-heading font-bold tracking-widest px-6 py-3 text-sm hover:bg-brand-dark hover:text-white transition-all duration-300 shadow-md hover:shadow-lg"
                             type="submit"
                             wire:key="shipping_submit_btn">
                         <span wire:loading.remove.delay

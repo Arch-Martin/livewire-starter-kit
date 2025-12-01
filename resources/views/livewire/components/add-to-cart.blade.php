@@ -15,7 +15,7 @@
         </div>
 
         <button type="submit"
-                class="w-full px-6 py-4 text-sm font-medium text-center text-white bg-primary rounded-lg hover:bg-secondary transition-colors"
+                class="w-full bg-brand-orange text-white uppercase font-heading font-bold tracking-widest px-6 py-3 text-sm hover:bg-brand-dark hover:text-white transition-all duration-300 shadow-md hover:shadow-lg"
                 wire:click.prevent="addToCart">
             Añadir al Carrito
         </button>

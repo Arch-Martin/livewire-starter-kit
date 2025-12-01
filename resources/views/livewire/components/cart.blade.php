@@ -7,7 +7,7 @@
         <span class="sr-only">Cart</span>
 
         <svg xmlns="http://www.w3.org/2000/svg"
-             class="w-7 h-7"
+             class="w-6 h-6"
              fill="none"
              viewBox="0 0 24 24"
              stroke="currentColor">
@@ -17,11 +17,6 @@
                   d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
         </svg>
         
-        @if($this->cart && $this->cart->lines->count())
-            <span class="absolute -top-1 -right-1 bg-brand-orange text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full">
-                {{ $this->cart->lines->count() }}
-            </span>
-        @endif
     </button>
 
     <div class="absolute inset-x-0 top-auto z-50 w-screen max-w-sm px-6 py-8 mx-auto mt-4 bg-white border border-gray-100 shadow-xl sm:left-auto rounded-xl"
@@ -131,13 +126,13 @@
 
         @if ($this->cart)
             <div class="mt-4 space-y-4 text-center">
-                <button class="block w-full p-3 text-sm font-medium text-blue-800 border border-blue-600 rounded-lg hover:ring-1 hover:ring-blue-600"
+                <button class="block w-full bg-transparent border-2 border-brand-dark text-brand-dark uppercase font-heading font-bold px-6 py-2 text-sm hover:bg-brand-dark hover:text-white transition-colors duration-300"
                         type="button"
                         wire:click="updateLines">
                     Update Cart
                 </button>
 
-                <a class="block w-full p-3 text-sm font-medium text-center text-white bg-blue-600 rounded-lg hover:bg-blue-500"
+                <a class="block w-full bg-brand-orange text-white uppercase font-heading font-bold tracking-widest px-6 py-3 text-sm hover:bg-brand-dark hover:text-white transition-all duration-300 shadow-md hover:shadow-lg"
                    href="{{ route('checkout.view') }}"
                    wire:navigate
                 >

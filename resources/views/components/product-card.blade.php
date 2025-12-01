@@ -1,6 +1,6 @@
 @props(['product'])
 
-<div class="group relative bg-white border border-gray-100 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+<div class="group relative overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl bg-white">
     <!-- Badge -->
     <div class="absolute top-0 left-0 bg-brand-orange text-white font-heading text-sm px-3 py-1 z-10">
         OFERTA
@@ -9,7 +9,7 @@
     <!-- Image -->
     <a href="{{ $product->defaultUrl ? route('product.view', $product->defaultUrl->slug) : '#' }}" wire:navigate class="block overflow-hidden relative aspect-square">
         @if ($product->thumbnail)
-            <img class="object-cover w-full h-full transition-transform duration-500 ease-out group-hover:scale-105"
+            <img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700 ease-in-out"
                  src="{{ $product->getFirstMediaUrl('images', 'medium') ?: $product->getFirstMediaUrl('images') }}"
                  alt="{{ $product->translateAttribute('name') }}" />
         @else
