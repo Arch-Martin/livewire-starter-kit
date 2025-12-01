@@ -7,21 +7,20 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                'brand-orange': '#F45B26',
-                'brand-dark': '#111111',
-                'brand-purple': '#4A0E76',
-                'brand-gray': '#F9F9F9',
+                'brand-black': '#111111',
+                'brand-grey': '#777777',
+                'brand-coffee': '#6F4E37',
                 // Aliases for compatibility
-                primary: '#F45B26',
-                secondary: '#111111',
-                accent: '#4A0E76',
+                primary: '#111111', // Main text/headings
+                secondary: '#777777', // Body text
+                accent: '#6F4E37', // Accents
             },
             fontFamily: {
-                'heading': ['Oswald', 'sans-serif'],
-                'body': ['Montserrat', 'sans-serif'],
+                'sans': ['"Work Sans"', 'sans-serif'],
+                'serif': ['"Playfair Display"', 'serif'],
                 // Aliases
-                sans: ['Montserrat', 'sans-serif'],
-                display: ['Oswald', 'sans-serif'],
+                'body': ['"Work Sans"', 'sans-serif'],
+                'heading': ['"Playfair Display"', 'serif'],
             },
             keyframes: {
                 'fade-in': {

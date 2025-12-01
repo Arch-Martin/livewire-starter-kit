@@ -1,60 +1,51 @@
-<header class="sticky top-0 z-50 bg-white shadow-md">
-    <!-- Top Row (Utility & Search) -->
-    <div class="flex items-center justify-between px-4 py-3 lg:px-8 gap-4">
-        <!-- Logo -->
-        <div class="flex-shrink-0">
-            <a href="/" class="flex items-center gap-2">
-                <img src="{{ asset('logo.png') }}" alt="Outlet del Café Logo" class="h-12 w-auto">
-                <span class="hidden sm:block font-heading text-2xl font-bold text-brand-dark tracking-tighter uppercase">
-                    Outlet del Café
-                </span>
-            </a>
-        </div>
+<header class="sticky top-0 z-50 bg-white shadow-sm font-sans">
+    <!-- Main Header Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <!-- Logo -->
+            <div class="flex-shrink-0 flex items-center">
+                <a href="/" class="flex items-center gap-2">
+                    <!-- Placeholder for Logo Image -->
+                    <span class="font-serif text-2xl font-bold text-brand-black tracking-tight">
+                        CAFE ALTURA
+                    </span>
+                </a>
+            </div>
 
-        <!-- Search Bar (Amazon Style) -->
-        <div class="flex-1 max-w-2xl mx-auto hidden lg:block">
-            <form action="/search" method="GET" class="flex relative">
-                <input type="text" name="term" placeholder="Buscar productos, marcas y más..." 
-                       class="w-full border-gray-300 rounded-l-full py-2 px-4 focus:ring-brand-orange focus:border-brand-orange font-body text-brand-dark">
-                <button type="submit" class="bg-brand-orange text-white rounded-r-full px-6 hover:bg-orange-600 transition-colors">
+            <!-- Desktop Navigation -->
+            <nav class="hidden lg:flex space-x-8">
+                <a href="/" class="text-sm font-medium text-brand-black hover:text-brand-coffee transition-colors uppercase tracking-wide">Inicio</a>
+                <a href="/collections/cafe-en-grano" class="text-sm font-medium text-brand-black hover:text-brand-coffee transition-colors uppercase tracking-wide">Tienda</a>
+                <a href="/suscripciones" class="text-sm font-medium text-brand-black hover:text-brand-coffee transition-colors uppercase tracking-wide">Suscripciones</a>
+                <a href="/mayorista" class="text-sm font-medium text-brand-black hover:text-brand-coffee transition-colors uppercase tracking-wide">Mayorista</a>
+                <a href="/blog" class="text-sm font-medium text-brand-black hover:text-brand-coffee transition-colors uppercase tracking-wide">Blog</a>
+            </nav>
+
+            <!-- Icons -->
+            <div class="flex items-center gap-6">
+                <!-- Search Icon -->
+                <button class="text-brand-black hover:text-brand-coffee transition-colors">
+                    <span class="sr-only">Buscar</span>
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                 </button>
-            </form>
-        </div>
 
-        <!-- Icons -->
-        <div class="flex items-center gap-6 h-full">
-             <a href="#" class="text-brand-dark hover:text-brand-orange transition-colors">
-                <span class="sr-only">Cuenta</span>
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
-            </a>
-            @livewire('components.cart')
-        </div>
-    </div>
+                <!-- User Icon -->
+                <a href="/login" class="text-brand-black hover:text-brand-coffee transition-colors">
+                    <span class="sr-only">Cuenta</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                </a>
 
-    <!-- Bottom Row (Navigation) -->
-    <div class="bg-brand-dark text-white hidden lg:block">
-        <div class="max-w-7xl mx-auto px-4 lg:px-8">
-            <nav class="flex space-x-6 py-3 overflow-x-auto">
-                <a href="/" class="font-heading uppercase tracking-wider text-sm hover:text-brand-orange transition-colors whitespace-nowrap">Inicio</a>
-                <a href="/collections/cafe-en-grano" class="font-heading uppercase tracking-wider text-sm hover:text-brand-orange transition-colors whitespace-nowrap">Tienda</a>
-                <a href="/cursos" class="font-heading uppercase tracking-wider text-sm hover:text-brand-orange transition-colors whitespace-nowrap">Cursos y Talleres</a>
-                <a href="/cafeterias" class="font-heading uppercase tracking-wider text-sm hover:text-brand-orange transition-colors whitespace-nowrap">Cafeterías</a>
-                <a href="/venta-mayorista" class="font-heading uppercase tracking-wider text-sm hover:text-brand-orange transition-colors whitespace-nowrap">Venta por Mayor</a>
-                <a href="/contacto" class="font-heading uppercase tracking-wider text-sm hover:text-brand-orange transition-colors whitespace-nowrap">Contacto</a>
-                <a href="/collections/chocolates" class="font-heading uppercase tracking-wider text-sm hover:text-brand-orange transition-colors whitespace-nowrap">Chocolates Gracia</a>
-                <a href="/seguimiento" class="font-heading uppercase tracking-wider text-sm hover:text-brand-orange transition-colors whitespace-nowrap">Seguimiento</a>
-            </nav>
+                <!-- Cart -->
+                @livewire('components.cart')
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="flex items-center lg:hidden">
+                <button type="button" class="text-brand-black hover:text-brand-coffee p-2">
+                    <span class="sr-only">Abrir menú</span>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
         </div>
-    </div>
-    
-    <!-- Mobile Search (Visible only on mobile) -->
-    <div class="lg:hidden px-4 pb-3 bg-white border-b border-gray-100">
-        <form action="/search" method="GET" class="flex relative">
-            <input type="text" name="term" placeholder="Buscar..." class="w-full border-gray-300 rounded-l-full py-2 px-4 focus:ring-brand-orange focus:border-brand-orange font-body text-sm">
-            <button type="submit" class="bg-brand-orange text-white rounded-r-full px-4">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-            </button>
-        </form>
     </div>
 </header>

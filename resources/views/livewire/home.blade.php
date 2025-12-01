@@ -1,6 +1,7 @@
 <div>
     <!-- Hero Section (Black Friday) -->
-    <x-welcome-banner />
+    <!-- Hero Section (Slider) -->
+    <x-hero-slider />
 
     <!-- Visual Navigation (Categories) -->
     <section class="py-16 bg-light" x-data="{ shown: false }" x-intersect.threshold.0.1="shown = true">
