@@ -3,14 +3,15 @@
     <x-welcome-banner />
 
     <!-- Visual Navigation (Categories) -->
-    <section class="py-16 bg-light">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section class="py-16 bg-light" x-data="{ shown: false }" x-intersect.threshold.0.1="shown = true">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 transition-all duration-1000 transform"
+             :class="shown ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'">
             <h2 class="text-3xl font-display font-bold text-secondary uppercase mb-8 border-l-4 border-primary pl-4">
                 Explora por Categoría
             </h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                <!-- Large Card 1 -->
+                <!-- Large Card 1: Café en Grano -->
                 <a href="/collections/cafe-en-grano" class="relative h-64 rounded-lg overflow-hidden group">
                     <img src="/images/bag.png" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Café en Grano">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
@@ -20,45 +21,45 @@
                         </div>
                     </div>
                 </a>
-                <!-- Large Card 2 -->
-                <a href="/collections/cafe-molido" class="relative h-64 rounded-lg overflow-hidden group">
-                    <img src="/images/ground.png" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Café Molido">
+                <!-- Large Card 2: Máquinas -->
+                <a href="/collections/maquinas" class="relative h-64 rounded-lg overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1585503418537-88331351ad99?q=80&w=1000&auto=format&fit=crop" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Máquinas">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
                         <div>
-                            <h3 class="text-2xl font-display font-bold text-white uppercase">Café Molido</h3>
-                            <p class="text-gray-300 text-sm mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Listo para preparar</p>
+                            <h3 class="text-2xl font-display font-bold text-white uppercase">Máquinas</h3>
+                            <p class="text-gray-300 text-sm mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Equipamiento profesional y hogar</p>
                         </div>
                     </div>
                 </a>
             </div>
             
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <!-- Small Card 1 -->
-                <a href="/collections/capsulas" class="relative h-48 rounded-lg overflow-hidden group">
-                    <img src="/images/capsules.png" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Cápsulas">
-                    <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-center justify-center">
-                        <h3 class="text-xl font-display font-bold text-white uppercase drop-shadow-md">Cápsulas</h3>
-                    </div>
-                </a>
-                <!-- Small Card 2 -->
+                <!-- Small Card 1: Accesorios -->
                 <a href="/collections/accesorios" class="relative h-48 rounded-lg overflow-hidden group">
                     <img src="/images/accessories.png" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Accesorios">
                     <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-center justify-center">
-                        <h3 class="text-xl font-display font-bold text-white uppercase drop-shadow-md">Accesorios</h3>
+                        <h3 class="text-xl font-display font-bold text-white uppercase drop-shadow-md text-center px-2">Accesorios</h3>
                     </div>
                 </a>
-                <!-- Small Card 3 -->
-                <a href="/collections/ofertas" class="relative h-48 rounded-lg overflow-hidden group">
-                    <img src="/images/promo.png" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Ofertas">
-                    <div class="absolute inset-0 bg-primary/60 group-hover:bg-primary/40 transition-colors flex items-center justify-center">
-                        <h3 class="text-xl font-display font-bold text-white uppercase drop-shadow-md">Ofertas</h3>
-                    </div>
-                </a>
-                <!-- Small Card 4 -->
-                <a href="#" class="relative h-48 rounded-lg overflow-hidden group">
-                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Blog">
+                <!-- Small Card 2: Cursos -->
+                <a href="/collections/cursos-y-talleres" class="relative h-48 rounded-lg overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1556742400-b5b7c5121f99?q=80&w=1000&auto=format&fit=crop" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Cursos y Talleres">
                     <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-center justify-center">
-                        <h3 class="text-xl font-display font-bold text-white uppercase drop-shadow-md">Blog</h3>
+                        <h3 class="text-xl font-display font-bold text-white uppercase drop-shadow-md text-center px-2">Cursos</h3>
+                    </div>
+                </a>
+                <!-- Small Card 3: Chocolates -->
+                <a href="/collections/chocolates" class="relative h-48 rounded-lg overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?q=80&w=1000&auto=format&fit=crop" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Chocolates">
+                    <div class="absolute inset-0 bg-primary/60 group-hover:bg-primary/40 transition-colors flex items-center justify-center">
+                        <h3 class="text-xl font-display font-bold text-white uppercase drop-shadow-md text-center px-2">Chocolates</h3>
+                    </div>
+                </a>
+                <!-- Small Card 4: Packs -->
+                <a href="/collections/packs" class="relative h-48 rounded-lg overflow-hidden group">
+                    <img src="/images/promo.png" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Packs y Ofertas">
+                    <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+                        <h3 class="text-xl font-display font-bold text-white uppercase drop-shadow-md text-center px-2">Packs</h3>
                     </div>
                 </a>
             </div>

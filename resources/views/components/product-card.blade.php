@@ -19,7 +19,7 @@
         @endif
         
         <!-- Quick Action Button -->
-        <div class="opacity-0 group-hover:opacity-100 transition-opacity absolute bottom-20 left-0 right-0 mx-auto w-10/12 bg-white/90 backdrop-blur text-black font-bold py-2 shadow-lg text-center cursor-pointer">
+        <div class="opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 absolute bottom-20 left-0 right-0 mx-auto w-10/12 bg-white/90 backdrop-blur text-black font-bold py-2 shadow-lg text-center cursor-pointer">
             VISTA RÁPIDA
         </div>
     </a>

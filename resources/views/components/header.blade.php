@@ -35,12 +35,15 @@
     <!-- Bottom Row (Navigation) -->
     <div class="bg-brand-dark text-white hidden lg:block">
         <div class="max-w-7xl mx-auto px-4 lg:px-8">
-            <nav class="flex space-x-8 py-3">
-                 <a href="/collections/ofertas" class="font-heading uppercase tracking-wider text-sm hover:border-b-2 hover:border-brand-orange transition-all pb-1">Ofertas</a>
-                 <a href="/collections/cafe-en-grano" class="font-heading uppercase tracking-wider text-sm hover:border-b-2 hover:border-brand-orange transition-all pb-1">Café en Grano</a>
-                 <a href="/collections/cafe-molido" class="font-heading uppercase tracking-wider text-sm hover:border-b-2 hover:border-brand-orange transition-all pb-1">Café Molido</a>
-                 <a href="/collections/capsulas" class="font-heading uppercase tracking-wider text-sm hover:border-b-2 hover:border-brand-orange transition-all pb-1">Cápsulas</a>
-                 <a href="/collections/accesorios" class="font-heading uppercase tracking-wider text-sm hover:border-b-2 hover:border-brand-orange transition-all pb-1">Accesorios</a>
+            <nav class="flex space-x-6 py-3 overflow-x-auto">
+                <a href="/" class="font-heading uppercase tracking-wider text-sm hover:text-brand-orange transition-colors whitespace-nowrap">Inicio</a>
+                <a href="/collections/cafe-en-grano" class="font-heading uppercase tracking-wider text-sm hover:text-brand-orange transition-colors whitespace-nowrap">Tienda</a>
+                <a href="/cursos" class="font-heading uppercase tracking-wider text-sm hover:text-brand-orange transition-colors whitespace-nowrap">Cursos y Talleres</a>
+                <a href="/cafeterias" class="font-heading uppercase tracking-wider text-sm hover:text-brand-orange transition-colors whitespace-nowrap">Cafeterías</a>
+                <a href="/venta-mayorista" class="font-heading uppercase tracking-wider text-sm hover:text-brand-orange transition-colors whitespace-nowrap">Venta por Mayor</a>
+                <a href="/contacto" class="font-heading uppercase tracking-wider text-sm hover:text-brand-orange transition-colors whitespace-nowrap">Contacto</a>
+                <a href="/collections/chocolates" class="font-heading uppercase tracking-wider text-sm hover:text-brand-orange transition-colors whitespace-nowrap">Chocolates Gracia</a>
+                <a href="/seguimiento" class="font-heading uppercase tracking-wider text-sm hover:text-brand-orange transition-colors whitespace-nowrap">Seguimiento</a>
             </nav>
         </div>
     </div>
